@@ -23,17 +23,17 @@ public class AlphaService {
         return alphaDao.select();
     }
 
-    public AlphaService() {
-        System.out.println("AlphaService.AlphaService");
-    }
+//    public AlphaService() {
+//        System.out.println("AlphaService.AlphaService");
+//    }
 
-    @PostConstruct
-    public void init() {
-        System.out.println("AlphaService.init");
-    }
-
-    @PreDestroy
-    public void destroy() {
-        System.out.println("AlphaService.destroy");
-    }
+//    @PostConstruct
+//    public void init() {
+//        System.out.println("AlphaService.init");
+//    }
+//
+//    @PreDestroy
+//    public void destroy() {
+//        System.out.println("AlphaService.destroy");
+//    }
 }

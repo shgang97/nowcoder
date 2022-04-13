@@ -14,14 +14,43 @@
 
 
 
+## 项目开发步骤
+
+### 一、社区登录模块
+
+1. 自动发送邮件：用于激活注册账号
+2. 开发注册功能
+3. 生成验证码
+4. 开发登录功能、退出功能
+5. 显示登录信息
+6. 账号设置：修改头像、密码
+7. 检查登录状态
+   - 使用拦截器：通过自定义注解加在需要拦截的方法上
+
 ## 项目效果展示
 
 
 
-### 社区首页
+### 一、社区首页
 
 实现首页分页功能
 
 <img src="./effectpicture/indexpage2022-04-08_01-43-45.jpg" style="zoom:25%;" />
 
 <img src="./effectpicture/indexpage12022-04-08_01-43-17.jpg" alt="indexpage12022-04-08_0143-17" style="zoom:25%;" />
+
+
+
+### 二、登录模块
+
+1. 开发注册功能
+
+<img src="./effectpicture/mlogin/register2022-04-14_02-45-55.jpg" alt="register2022-04-14_02-45-55" style="zoom:25%;" />
+
+2. 开发登录功能
+
+<img src="./effectpicture/mlogin/login2022-04-14_02-49-49.jpg" alt="login2022-04-14_02-49-49" style="zoom:25%;" />
+
+
+
+<img src="./effectpicture/mlogin/loginpostXnip2022-04-14_02-51-50.jpg" alt="loginpostXnip2022-04-14_02-51-50" style="zoom:25%;" />
