@@ -54,6 +54,7 @@ public class DiscussPostController {
     public String getDiscussPost(@PathVariable("discussPostId") int discussPostId, Model model) {
         // 查询帖子
         DiscussPost post = discussPostService.findDiscussPostById(discussPostId);
+        System.out.println(post);
         model.addAttribute("post", post);
 
         // 查询作者
