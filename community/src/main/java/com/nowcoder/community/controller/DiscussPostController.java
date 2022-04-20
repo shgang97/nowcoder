@@ -75,6 +75,7 @@ public class DiscussPostController implements CommunityConstant {
         // 回复：给评论的评论
         // 评论列表
         List<Comment> commentList = commentService.findCommentsByEntity(ENTITY_TYPE_POST, post.getId(), page.getOffset(), page.getLimit());
+
         List<Map<String, Object>> commentVoList = new ArrayList<>();
         if (commentList != null && commentList.size() > 0) {
             for (Comment comment : commentList) {
@@ -86,20 +87,19 @@ public class DiscussPostController implements CommunityConstant {
                 commentVo.put("user", userService.findUserById(comment.getUserId()));
 
                 // 回复列表
-                List<Comment> replyList = commentService.findCommentsByEntity(ENTITY_TYPE_COMMENT, comment.getEntityId(), 0, Integer.MAX_VALUE);
+                List<Comment> replyList = commentService.findCommentsByEntity(ENTITY_TYPE_COMMENT, comment.getId(), 0, Integer.MAX_VALUE);
+
                 List<Map<String, Object>> replyVoList = new ArrayList<>();
                 if (replyList != null && replyList.size() > 0) {
                     for (Comment reply : replyList) {
-                        Map<String, Object> replyVo =new HashMap<>();
+                        Map<String, Object> replyVo = new HashMap<>();
                         // 回复
                         replyVo.put("reply", reply);
                         // 回复作者
                         replyVo.put("user", userService.findUserById(reply.getUserId()));
                         // 回复目标
                         User target = reply.getTargetId() == 0 ? null : userService.findUserById(reply.getTargetId());
-                        if (target != null) {
-                            replyVo.put("target", target);
-                        }
+                        replyVo.put("target", target);
                         replyVoList.add(replyVo);
                     }
                 }
