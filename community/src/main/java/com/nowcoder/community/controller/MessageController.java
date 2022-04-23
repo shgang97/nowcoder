@@ -126,10 +126,10 @@ public class MessageController {
         Message message = new Message();
         message.setFromId(hostHolder.getUser().getId());
         message.setToId(target.getId());
-        if (message.getFromId() < message.getId()) {
-            message.setConversationId(message.getFromId() + "-" + message.getToId());
+        if (message.getFromId() < message.getToId()) {
+            message.setConversationId(message.getFromId() + "_" + message.getToId());
         } else {
-            message.setConversationId(message.getToId() + "-" + message.getFromId());
+            message.setConversationId(message.getToId() + "_" + message.getFromId());
         }
         message.setContent(content);
         message.setCreateTime(new Date());
