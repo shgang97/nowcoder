@@ -36,6 +36,8 @@
 1. 展示帖子详情
 1. 显示评论、添加评论
 1. 发送私信、显示私信
+1. 统一异常处理
+1. 统一记录日志功能：基于SpringAop
 
 ## 项目效果展示
 
@@ -64,3 +66,32 @@
 
 
 <img src="./effectpicture/mlogin/loginpostXnip2022-04-14_02-51-50.jpg" alt="loginpostXnip2022-04-14_02-51-50" style="zoom:25%;" />
+
+
+
+### 三、发布帖子模块
+
+1. 发布帖子
+
+<img src="./effectpicture/mpost/post-2022-04-24_14-59-56.jpg" alt="post-2022-04-24_14-59-56" style="zoom:50%;" />
+
+<img src="./effectpicture/mpost/post1-2022-04-24_15-00-40.jpg" alt="post1-2022-04-24_15-00-40" style="zoom:50%;" />
+
+2. 展示帖子详情
+
+<img src="./effectpicture/mpost/postdetail-2022-04-24_15-10-47.jpg" alt="postdetail-2022-04-24_15-10-47" style="zoom:50%;" />
+
+3. 发表评论、显示评论
+
+<img src="./effectpicture/mpost/comment-2022-04-24_15-14-33.jpg" alt="comment-2022-04-24_15-14-33" style="zoom:50%;" />
+
+3. 发送私信、查看私信
+
+<img src="./effectpicture/mpost/letter-2022-04-24_15-15-37.jpg" alt="letter-2022-04-24_15-15-37" style="zoom:50%;" />
+
+<img src="./effectpicture/mpost/letter1-2022-04-24_15-16-07.jpg" alt="letter1-2022-04-24_15-16-07" style="zoom:50%;" />
+
+4. 统一记录日志
+
+<img src="./effectpicture/mpost/log-2022-04-24_15-18-00.jpg" alt="log-2022-04-24_15-18-00" style="zoom:50%;" />
+
