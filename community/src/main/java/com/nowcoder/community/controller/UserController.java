@@ -126,7 +126,7 @@ public class UserController implements CommunityConstant {
         // 前端已校验输入密码不为空
 
 
-        // 校验密码长度是否大于等于8位
+        // 校验密码长度是否大于等于6位
         if (StringUtils.length(newPassword) < 6) {
             model.addAttribute("newFailure", "密码长度不能小于6位!");
             return "/site/setting";
