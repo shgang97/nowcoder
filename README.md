@@ -7,7 +7,7 @@
 
 - **技术选型**：SpringBoot+SpringMVC+Mybatis+MySQL+Redis+thymleaf
 
-- **项目描述**：本项目采用微服务架构的思想，主要涉及模块有权限模块、核心模块、性能模块、通知模块、搜素模块和其他模块。完成了社区首页代码的编写，实现了分页功能，登录模块后台代码的编写，解决了帖子审核、评论、异常等功能的开发，从中学习到了技术栈等。
+- **项目描述**：本项目是一个社区论坛项目，支持发帖、评论、私信、关注、点赞等功能。采用微服务架构的思想，主要涉及模块有权限模块、核心模块、性能模块、通知模块、搜素模块和其他模块。完成了各功能模块后端代码编写，使用Redis存储用户登录信息，提高响应速度，使用Kafka向用户自动推送系统通知，使用elasticsearch实现社区搜索功能。
 
 <a href="https://github.com/shgang97/nowcoder">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=shgang97&repo=nowcoder&bg_color=000000&title_color=00ff00&icon_color=ffff33&text_color=ffffff" /></a>
@@ -38,6 +38,17 @@
 1. 发送私信、显示私信
 1. 统一异常处理
 1. 统一记录日志功能：基于SpringAop
+
+### 三、点赞、关注
+
+### 四、系统消息推送
+
+### 五、搜索模块
+
+1. 发布帖子时，使用kafka的发布订阅实现将帖子信息存入elasticsearch
+2. 从elasticsearch中搜索帖子信息
+
+
 
 ## 项目效果展示
 
@@ -95,3 +106,8 @@
 
 <img src="./effectpicture/mpost/log-2022-04-24_15-18-00.jpg" alt="log-2022-04-24_15-18-00" style="zoom:50%;" />
 
+### 六、搜索模块
+
+<img src="./effectpicture/msearch/search-2022-04-27_01-20-33.jpg" alt="search-2022-04-27_01-20-33" style="zoom:50%;" />
+
+<img src="./effectpicture/msearch/search1-2022-04-27_01-21-37.jpg" alt="search1-2022-04-27_01-21-37" style="zoom:50%;" />
