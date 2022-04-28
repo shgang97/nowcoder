@@ -27,7 +27,7 @@ public class DiscussPostMapperTest {
 
     @Test
     public void selectDiscussPosts() {
-        List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(0, 1, 10);
+        List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(0, 1, 10, 0);
         for (DiscussPost post : discussPosts) {
             System.out.println(post);
         }
@@ -35,7 +35,7 @@ public class DiscussPostMapperTest {
 
     @Test
     public void selectDiscussPostRows() {
-        List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(149, 0, 10);
+        List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(149, 0, 10, 0);
         for (DiscussPost post : discussPosts) {
             System.out.println(post);
         }

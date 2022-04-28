@@ -7,7 +7,7 @@
 
 - **技术选型**：SpringBoot+SpringMVC+Mybatis+MySQL+Redis+kafka+elasticsearch+SpringSecuritythymleaf
 
-- **项目描述**：本项目是一个社区论坛项目，支持发帖、评论、私信、关注、点赞、加精、置顶、删帖等功能。采用微服务架构的思想，主要涉及模块有权限模块、核心模块、性能模块、通知模块、搜素模块和其他模块。完成了各功能模块后端代码编写，使用Redis存储用户登录信息，提高响应速度，使用Kafka实现异步推送系统通知，使用elasticsearch实现社区搜索功能，使用SpringSecurity实现权限认证。
+- **项目描述**：本项目是一个社区论坛项目，支持发帖、评论、私信、关注、点赞、加精、置顶、删帖等功能。采用微服务架构的思想，主要涉及模块有权限模块、核心模块、性能模块、通知模块、搜素模块和其他模块。完成了各功能模块后端代码编写，使用Redis存储用户登录信息，提高响应速度，使用Kafka实现异步推送系统通知，使用elasticsearch实现社区搜索功能，使用SpringSecurity实现权限控制。
 
 <a href="https://github.com/shgang97/nowcoder">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=shgang97&repo=nowcoder&bg_color=000000&title_color=00ff00&icon_color=ffff33&text_color=ffffff" /></a>
@@ -48,9 +48,14 @@
 1. 发布帖子时，使用kafka的发布订阅实现将帖子信息存入elasticsearch
 2. 从elasticsearch中搜索帖子信息
 
-### 六、权限模块
+### 六、权限、网站数据统计、热帖排行
 
-1. 登录权限
+1. 使用spring security实现权限控制：需要登录才能访问权限；管理员加精、置顶权限；版主删帖权限
+
+2. 网站数据统计：使用redis的hyperloglog统计uv，使用bitmap统计dau
+3. 热帖排行：使用quartz的任务调度定时计算帖子分数，根据分数对帖子进行排序展示
+
+
 
 
 
@@ -108,7 +113,7 @@
 
 4. 统一记录日志
 
-<img src="./effectpicture/mpost/log-2022-04-24_15-18-00.jpg" alt="log-2022-04-24_15-18-00" style="zoom:50%;" />
+<img src="./effectpicture/mpost/log-2022-04-24_15-18-00.jpg" alt="log-2022-04-24_15-18-00" style="zoom:10%;" />
 
 ### 六、搜索模块
 
