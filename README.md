@@ -5,14 +5,9 @@
 
 - **项目地址**：https://github.com/shgang97/nowcoder
 
-- **技术选型**：SpringBoot+SpringMVC+Mybatis+MySQL+Redis+kafka+elasticsearch+SpringSecuritythymleaf
+- **技术选型**：SpringBoot+SpringMVC+Mybatis+MySQL+Redis+kafka+elasticsearch+SpringSecurity+thymleaf
 
-- **项目描述**：本项目是一个社区论坛项目，支持发帖、评论、私信、关注、点赞、加精、置顶、删帖等功能。采用微服务架构的思想，主要涉及模块有权限模块、核心模块、性能模块、通知模块、搜素模块和其他模块。完成了各功能模块后端代码编写，使用Redis存储用户登录信息，提高响应速度，使用Kafka实现异步推送系统通知，使用elasticsearch实现社区搜索功能，使用SpringSecurity实现权限控制。
-
-<a href="https://github.com/shgang97/nowcoder">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=shgang97&repo=nowcoder&bg_color=000000&title_color=00ff00&icon_color=ffff33&text_color=ffffff" /></a>
-
-
+- **项目描述**：本项目是一个社区论坛项目，支持发帖、评论、私信、关注、点赞、加精、置顶、删帖等功能。主要涉及模块有权限模块、核心模块、性能模块、通知模块、搜素模块和其他模块。完成了各功能模块后端代码编写，使用Redis存储用户登录信息，提高响应速度，使用Kafka实现异步推送系统通知，使用elasticsearch实现社区搜索功能，使用SpringSecurity实现权限控制，使用七牛云存储用户头像。
 
 ## 项目开发步骤
 
@@ -120,3 +115,4 @@
 <img src="./effectpicture/msearch/search-2022-04-27_01-20-33.jpg" alt="search-2022-04-27_01-20-33" style="zoom:50%;" />
 
 <img src="./effectpicture/msearch/search1-2022-04-27_01-21-37.jpg" alt="search1-2022-04-27_01-21-37" style="zoom:50%;" />
+
